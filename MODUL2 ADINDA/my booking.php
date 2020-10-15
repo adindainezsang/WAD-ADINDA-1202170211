@@ -111,7 +111,7 @@
         $priceLux += 20 ;
     }
 
-    if ($roomService == 1) {
+    if ($roomservice == 1) {
         echo " <ul><li> Room Service </li> </ul> " ;
         $priceStan += 20 ;
         $priceSup += 20 ;

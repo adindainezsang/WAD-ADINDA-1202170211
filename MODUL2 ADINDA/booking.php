@@ -40,7 +40,7 @@ img {
 
         <div class="row">
         <div class="col-sm-6">
-        <form action="My Booking.php" method="POST">
+        <form action="My Booking.php" method="GET">
 
         <div class="form-group">
         <label >Name</label>
@@ -48,7 +48,7 @@ img {
  <br>                 
         <div class="form-group">
         <label>Check In</label>
-        <input type="date" class="form-control" name="date" >
+        <input type="date" class="form-control" name="number" >
         </div>
 
         <div class="form-group">
