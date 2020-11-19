@@ -16,7 +16,7 @@ if (isset($_POST['name'])) {
     $target = "gambar/" . basename($gambar = $_FILES['gambar']['name']);
     move_uploaded_file($_FILES['gambar']['tmp_name'], $target);
 
-    $query = mysqli_query($conn, "INSERT INTO event_table VALUES('','$name','$deskripsi','$gambar','$kategori','$tanggal','$mulai','$berakhir','$tempat','$harga','$benefit')");
+    $query = mysqli_query($conn, "SELECT * FROM event_table VALUES('','$name','$deskripsi','$gambar','$kategori','$tanggal','$mulai','$berakhir','$tempat','$harga','$benefit')");
 
     if ($query > 0) {
         echo "<script>alert('Data telah disimpan'); window.location.href='home.php';</script>";

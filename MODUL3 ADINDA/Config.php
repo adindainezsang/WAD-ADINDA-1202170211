@@ -5,7 +5,7 @@ $dbpass = "";
 $dbname = "wad_modul3_adinda";
 
 
-$conn =  mysqli_connect($dbhost, $dbuser, $dbpass, $dbname,3306);
+$conn =  mysql_connect($dbhost, $dbuser, $dbpass, $dbname,3306);
 
 if(!$conn){
     echo "<script> 
